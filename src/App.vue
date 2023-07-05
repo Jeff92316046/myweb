@@ -34,7 +34,7 @@ export default {
     <v-layout>
       <v-app-bar color="rgba(23, 18 ,127 ,1)" density="compact">
         <v-app-bar-nav-icon href="#/">
-          <v-img src="@/assets/cat.png" />
+          <v-img src="@/assets/cat.png"/>
         </v-app-bar-nav-icon>
         <v-btn variant="text" href="#/about">about</v-btn>
         <v-btn variant="text" href="#/contact">cantact</v-btn>
