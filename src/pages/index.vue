@@ -16,7 +16,7 @@ import { ref } from "vue"
 const count = ref(3)
 const class_str = ref("offset-3")
 function plus(){
-  count.value = count.value==0 ? 7 : count.value-1
+  count.value = count.value==0 ? 6 : count.value-1
   class_str.value = "offset-" +count.value
 }
 </script>
