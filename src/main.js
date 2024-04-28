@@ -1,20 +1,20 @@
-import { createApp } from 'vue'
-import { createVuetify } from 'vuetify'
+/**
+ * main.js
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
 
-// Translations provided by Vuetify
-import { pl, zhHans } from 'vuetify/locale'
+// Plugins
+import { registerPlugins } from '@/plugins'
 
+// Components
 import App from './App.vue'
+
+// Composables
+import { createApp } from 'vue'
 
 const app = createApp(App)
 
-const vuetify = createVuetify({
-  locale: {
-    locale: 'zhHans',
-    messages: { zhHans, pl},
-  },
-})
-
-app.use(vuetify)
+registerPlugins(app)
 
 app.mount('#app')
